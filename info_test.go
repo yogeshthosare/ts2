@@ -19,7 +19,7 @@ func TestInfo(t *testing.T){
     	}
 	var expectedUid = user.Uid
 	var expectedPid = strconv.Itoa(os.Getpid())
-
+	
 	if uid != expectedUid {
                 t.Fatalf("Expected %s but got %s", uid, expectedUid)
         }
